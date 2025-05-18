@@ -12,11 +12,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://youtube.com/@DevOpsPro"
+          href="https://github.com/AdarshJain-dev"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn DevOps
+          Learn Review more about me
         </a>
       </header>
     </div>
