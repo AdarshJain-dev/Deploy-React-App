@@ -8,16 +8,17 @@ on:
     contents: write
 
 jobs:
-  deploy:
+  update-readme-with-youtube:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Deploy content
+      - name: Update README with YouTube videos
         run: |
-          echo "Deploying content..."
-          # Add your deployment commands here
-          # For example, you might want to build and deploy a static site
-          # npm install && npm run build && npm run deploy
-          echo "Content deployed successfully!"
+          #!/bin/bash
+          # Fetch the latest YouTube videos and update the README file
+          # This is a placeholder command. Replace it with your actual command to fetch YouTube videos.
+          echo "Updating README with YouTube videos..."
+          # Example command to fetch YouTube videos and update README
+          # youtube-dl --get-title --get-id --get-thumbnail <YouTube-URL> >> README.md
+          echo "README updated with YouTube videos."
