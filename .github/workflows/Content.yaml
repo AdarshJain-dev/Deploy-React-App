@@ -12,7 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+            command_tag_name: "youtube"
       - name: Update README with YouTube videos
         run: |
           #!/bin/bash
@@ -22,3 +24,4 @@ jobs:
           # Example command to fetch YouTube videos and update README
           # youtube-dl --get-title --get-id --get-thumbnail <YouTube-URL> >> README.md
           echo "README updated with YouTube videos."
+        
